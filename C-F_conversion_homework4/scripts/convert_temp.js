@@ -55,14 +55,10 @@ function domLoaded() {
 
 
 function convertCtoF(C) {
-   // TODO: Return temp in °F. 
-   // °F = °C * 9/5 + 32
    return C * (9/5) + 32;
 }
 
 function convertFtoC(F) {
-   // TODO: Return temp in °C. 
-   // °C = (°F - 32) * 5/9
    return (F - 32) * (5/9);
 }
 
