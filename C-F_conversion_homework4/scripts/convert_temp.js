@@ -6,6 +6,7 @@ function domLoaded() {
    const cInput = document.getElementById("C_in");
    const fInput = document.getElementById("F_in");
    const msg = document.getElementById("message");
+   let lastEdited = null;
 
    cInput .addEventListener("input", function(){
       fInput.value = "";
