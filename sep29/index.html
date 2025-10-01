@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async demo</title>
+</head>
+<body>
+    <h1>Async Demo</h1>
+
+    <script>
+        function example(msg){
+            //console.log(msg)
+            console.log(msg ? msg : "default");
+        }
+        setTimeout(example, 3000);
+        setTimeout(example, 2000, "howdy");
+    </script>
+    
+</body>
+</html>

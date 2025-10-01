@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Collection Form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h2>User Data Collection Form</h2>
+    <form action="form-viewer.php" method="post">
+        <div id="name">
+        <label for="name">Your name:</label>
+        <input type="text" id="name" name="name" required>
+        </div>
+
+        <div id="zero">
+        <label>Choose you Hobbies:</label>
+        <input type="checkbox" name="hobbies[]" value="Sports"> Sports
+        <input type="checkbox" name="hobbies[]" value="Traveling"> Traveling
+        <input type="checkbox" name="hobbies[]" value="Cooking"> Cooking
+        </div>
+
+        <div id="one">
+        <label>Choose your favorite collor:</label>
+        <input type="radio" name="color" value="Red"> Red
+        <input type="radio" name="color" value="Blue"> Blue
+        <input type="radio" name="color" value="Green"> Green
+        </div>
+
+        <div id="two">
+        <label for="country">Select your country:</label>
+        <select name="coutnry" id="country">
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="Mexico">Mexico</option>
+        </select>
+        </div>
+
+        <label for="languages">Selecta the language you speak (hold ctrl/cmd to select multiple):</label>
+        <select name="languages[]" id="languages" multiple size="4">
+            <option value="English">English</option>
+            <option value="Spanish">Spanish</option>
+            <option value="French">French</option>
+            <option value="German">German</option>
+        </select>   
+
+        <label for="birthday">Your Birthday</label>
+        <input type="date" id="birthday" name="birthday">
+
+        <br><br>
+        <input type="submit" value="Submit">
+
+        </form>
+</body>
+</html>
